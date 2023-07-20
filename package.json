@@ -16,11 +16,6 @@
         "node": "npx hardhat node --tsconfig tsconfig.testing.json --fork $(. ./.env && echo $ALCHEMY_URL)",
         "node:polygon": "npx hardhat --tsconfig tsconfig.testing.json --config hardhat.config.polygon.ts node --fork $(. ./.env && echo $ALCHEMY_URL_POLYGON) --port 8137"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "pretty-quick --staged && yarn run lint"
-        }
-    },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/",
         "access": "public"
@@ -56,7 +51,6 @@
         "eslint-plugin-mocha-no-only": "^1.1.1",
         "eslint-plugin-prettier": "^3.4.1",
         "hardhat": "^2.9.9",
-        "husky": "^4.2.1",
         "lodash.clonedeep": "^4.5.0",
         "lodash.set": "^4.3.2",
         "mocha": "8.2.1",
