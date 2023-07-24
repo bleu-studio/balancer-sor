@@ -30,3 +30,6 @@ export type {
 } from './pools/gyroEPool/gyroEMath/gyroEMathHelpers';
 export { balancesFromTokenInOut } from './pools/gyroEPool/gyroEMath/gyroEMathHelpers';
 export * as LinearMaths from './pools/linearPool/linearMath';
+export * as GyroEMathFunctions from './pools/gyroEPool/gyroEMath/gyroEMathFunctions';
+export * as GyroHelpersSignedFixedPoint from './pools/gyroHelpers/gyroSignedFixedPoint';
+export * as GyroHelpers from './pools/gyroHelpers/helpers';
