@@ -1,6 +1,3 @@
-export { SOR } from './wrapper';
-export { BPTForTokensZeroPriceImpact as weightedBPTForTokensZeroPriceImpact } from './frontendHelpers/weightedHelpers';
-export { BPTForTokensZeroPriceImpact as stableBPTForTokensZeroPriceImpact } from './frontendHelpers/stableHelpers';
 export * from './types';
 export { formatSequence, getTokenAddressesForSwap } from './formatSwaps';
 export { RouteProposer } from './routeProposal';
@@ -24,10 +21,12 @@ export * as Gyro2Maths from './pools/gyro2Pool/gyro2Math';
 export * as Gyro3Maths from './pools/gyro3Pool/gyro3Math';
 export * as GyroEMaths from './pools/gyroEPool/gyroEMath/gyroEMath';
 export * as FxMaths from './pools/xaveFxPool/fxPoolMath';
-export {
-    balancesFromTokenInOut,
+export * as gyroEMathHelpers from './pools/gyroEPool/gyroEMath/gyroEMathHelpers';
+export { safeParseFixed } from './utils';
+export type {
     GyroEParams,
     DerivedGyroEParams,
     Vector2,
 } from './pools/gyroEPool/gyroEMath/gyroEMathHelpers';
+export { balancesFromTokenInOut } from './pools/gyroEPool/gyroEMath/gyroEMathHelpers';
 export * as LinearMaths from './pools/linearPool/linearMath';
